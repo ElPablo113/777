@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Slot Machine</title>
+    <link rel="stylesheet" href="sitee.css">
+</head>
+
+<body>
+    <div class="casino-container">
+        <h1 class="casino-title">🎰 Slot Machine 🎰</h1>
+        <div class="balance-display">Balance: $<span id="balance">0</span></div>
+        <div class="slot-machine">
+            <div id="slot1" class="slot">?</div>
+            <div id="slot2" class="slot">?</div>
+            <div id="slot3" class="slot">?</div>
+        </div>
+        <div class="controls">
+            <label for="deposit">Deposit: </label>
+            <input type="number" id="deposit" min="1" placeholder="Enter amount">
+            <button id="deposit-btn">Deposit</button>
+        </div>
+        <div class="controls">
+            <label for="lines">Lines to Bet (1-3): </label>
+            <input type="number" id="lines" min="1" max="3" placeholder="Enter lines">
+        </div>
+        <div class="controls">
+            <label for="bet">Bet Per Line: </label>
+            <input type="number" id="bet" min="1" placeholder="Enter bet">
+        </div>
+        <button id="spin-btn" disabled>🎲 Spin 🎲</button>
+        <div class="winnings-display">Winnings: $<span id="winnings">0</span></div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="777.js"></script>
+</body>
+
+</html>

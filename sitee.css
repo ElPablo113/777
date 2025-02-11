@@ -1,0 +1,164 @@
+/* Body styling for casino vibes */
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #222222, #111111);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.casino-container {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+    background: #333333;
+    border: 2px solid #ffbf00;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 223, 0, 0.8), 0 0 10px #ffbf00;
+}
+
+/* Title styling */
+.casino-title {
+    font-size: 2.5rem;
+    color: #ffbf00;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #ffbf00, 0 0 20px #ff8000;
+}
+
+/* Slot machine styling */
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.slot {
+    width: 70px;
+    height: 70px;
+    margin: 0 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffbf00;
+    background: #222222;
+    border: 2px solid #ffbf00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.5);
+}
+
+/* Controls section */
+.controls {
+    margin: 15px 0;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ffbf00;
+    border-radius: 5px;
+    background: #444444;
+    color: #ffffff;
+    outline: none;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff8000, #ffbf00);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 128, 0, 0.6);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 128, 0, 0.8);
+}
+
+button:disabled {
+    background: #555555;
+    cursor: not-allowed;
+}
+
+/* Display sections */
+.balance-display,
+.winnings-display {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff4d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .casino-container {
+        width: 90%;
+    }
+
+    .slot {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+/* Slot machine spin animation */
+@keyframes spin {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-70px);
+    }
+
+    50% {
+        transform: translateY(-140px);
+    }
+
+    75% {
+        transform: translateY(-210px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.slot.spinning {
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* Adjust slot machine appearance */
+.slot {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffbf00;
+    background: #222222;
+    border: 2px solid #ffbf00;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.5);
+}
